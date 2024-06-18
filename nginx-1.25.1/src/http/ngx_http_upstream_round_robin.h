@@ -37,6 +37,7 @@ struct ngx_http_upstream_rr_peer_s {
     time_t                          fail_timeout;
     ngx_msec_t                      slow_start;
     ngx_msec_t                      start_time;
+    ngx_msec_t                      response_time;//响应时间
 
     ngx_uint_t                      down;
 
