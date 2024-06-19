@@ -809,7 +809,7 @@ found:
     }
 
     u->peer.start_time = ngx_current_msec;
-
+    
     if (u->conf->next_upstream_tries
         && u->peer.tries > u->conf->next_upstream_tries)
     {
