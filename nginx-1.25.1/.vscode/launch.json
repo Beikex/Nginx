@@ -11,7 +11,7 @@
             "type": "cppdbg",
             "request": "attach",
             "program": "${workspaceFolder}/objs/nginx",
-            "processId": "56166", // 填写 Worker 进程 PID
+            "processId": "60011", // 填写 Worker 进程 PID
             "MIMode": "lldb"
         },
         // 启动nginx

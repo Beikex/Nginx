@@ -5,7 +5,7 @@
  */
 
 
-#include "ngx_http_upstream.h"
+
 #include <ngx_config.h>
 #include <ngx_core.h>
 #include <ngx_http.h>
@@ -666,7 +666,7 @@ ngx_http_upstream_free_round_robin_peer(ngx_peer_connection_t *pc, void *data,
     ngx_msec_t now_t_response_time=now_t-pc->start_time;//lesst_time
     ngx_int_t a=1;
     ngx_int_t b=1;
-    peer->response_time=(a*peer->response_time+b*now_response_time)/(a+b);
+    peer->response_time=(a*peer->response_time+b*now_t_response_time)/(a+b);
 
     if(now_t>pc->start_time){
         ngx_log_error(NGX_LOG_WARN, pc->log, 0,
